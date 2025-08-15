@@ -28,7 +28,7 @@ public class ProfileService {
     private final AuthenticationManager authenticationManager;
     private final JwtUtil jwtUtil;
 
-    @Value("https://money-manager-api-g7d1.onrender.com")
+    @Value("${app.activation.url}")
     private String activationURL;
 
     public ProfileDTO registerProfile(ProfileDTO profileDTO) {
